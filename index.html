@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduarda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+    <div id="tela-inicial">
+        <div class="inicial-conteudo">
+
+            <span class="subtitulo-inicial">bem-vinda ao</span>
+
+            <h1>seu usuário, duda</h1>
+
+            <img
+                src="duda.png"
+                alt="Duda"
+                class="foto-duda"
+            >
+
+            <p>
+                uma coisinha pra você<br>
+                não é nada sério, só abre e vê :)
+            </p>
+
+            <button onclick="entrar()">entrar</button>
+
+        </div>
+    </div>
+
+
+    <!-- CELULAR -->
+    <div id="celular">
+
+        <div class="botao-lateral volume-cima"></div>
+        <div class="botao-lateral volume-baixo"></div>
+        <div class="botao-lateral bloqueio"></div>
+
+        <div class="moldura-celular">
+
+            <div class="tela-celular">
+
+                <div class="notch">
+                    <div class="camera-frontal"></div>
+                    <div class="alto-falante"></div>
+                </div>
+
+                <div class="celular-topo">
+                    <span id="hora">00:00</span>
+
+                    <div class="status-direita">
+                        <span>⌁</span>
+                        <span>ᯤ</span>
+
+                        <div class="bateria">
+                            <div class="nivel-bateria"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="tela-principal">
+
+                    <div class="saudacao">
+                        <span>olá, Eduarda</span>
+                    </div>
+
+                    <div class="data">
+                        <span id="data-atual"></span>
+                    </div>
+
+
+                    <div class="apps">
+
+                        <button class="icone" onclick="abrirApp('mar')">
+                            <span>🌊</span>
+                            <small>mar</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('sol')">
+                            <span>☀️</span>
+                            <small>sol</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('lua')">
+                            <span>🌙</span>
+                            <small>lua</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('chuva')">
+                            <span>☁️</span>
+                            <small>chuva</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('camera')">
+                            <span>📷</span>
+                            <small>câmera</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('cafe')">
+                            <span>☕</span>
+                            <small>café</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirMusica()">
+                            <span>🎧</span>
+                            <small>playlist</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirMensagens()">
+                            <span>💬</span>
+                            <small>mensagens</small>
+                        </button>
+
+                        <button class="icone" onclick="abrirApp('segredo')">
+                            <span>✨</span>
+                            <small>segredo</small>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div id="tela-app">
+
+                    <button class="voltar" onclick="voltarPrincipal()">
+                        ← voltar
+                    </button>
+
+                    <div class="conteudo-app">
+
+                        <div id="icone-app"></div>
+
+                        <div class="etiqueta-app">
+                            feito pensando em você
+                        </div>
+
+                        <h2 id="titulo-app"></h2>
+
+                        <p id="mensagem-app"></p>
+
+                        <div class="detalhe-app">
+                            ✦
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="tela-mensagens">
+
+                    <div class="whatsapp-topo">
+
+                        <button onclick="voltarMensagens()">←</button>
+
+                        <div>
+                            <strong>Eduarda</strong>
+                            <small>online</small>
+                        </div>
+
+                    </div>
+
+                    <div class="mensagens-corpo">
+
+                        <div class="bolha-mensagem">
+                            você sempre arruma um jeito
+                        </div>
+
+                        <div class="bolha-mensagem">
+                            de entrar no coração das pessoas
+                        </div>
+
+                        <div class="bolha-mensagem">
+                            sem nem perceber
+                        </div>
+
+                        <div class="bolha-mensagem">
+                            ou você faz isso de propósito? KKKK
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="tela-camera">
+
+                    <div class="camera-topo">
+                        <button onclick="voltarCamera()">×</button>
+                        <span>câmera</span>
+                        <span>◉</span>
+                    </div>
+
+                    <div class="visor-camera">
+
+                        <img src="papeldeparede.jpg" alt="">
+
+                        <div class="grade-camera">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="camera-bottom">
+
+                        <span class="camera-legenda">
+                            algumas coisas merecem ser guardadas
+                        </span>
+
+                        <button class="botao-foto" onclick="tirarFoto()">
+                            <span></span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div id="tela-musica">
+
+                    <button class="voltar" onclick="voltarParaPrincipal()">
+                        ← voltar
+                    </button>
+
+                    <div class="musica-conteudo">
+
+                        <div class="musica-titulo">
+                            duas músicas que me lembraram você
+                        </div>
+
+                        <div class="musicas-lista">
+
+                            <button class="musica-card" onclick="tocarMusica(1)">
+
+                                <img src="defeitomeu.jpg" alt="">
+
+                                <div>
+                                    <strong>Defeito Meu</strong>
+                                    <small>Renan Oliveira</small>
+                                </div>
+
+                                <span>▶</span>
+
+                            </button>
+
+
+                            <button class="musica-card" onclick="tocarMusica(2)">
+
+                                <img src="donadosfuturosversos.jpg" alt="">
+
+                                <div>
+                                    <strong>Dona dos Futuros Versos</strong>
+                                    <small>Carol Biazin</small>
+                                </div>
+
+                                <span>▶</span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="player-musica">
+
+                    <button class="voltar" onclick="voltarMusica()">
+                        ← voltar
+                    </button>
+
+                    <div class="player-conteudo">
+
+                        <img id="capa-player" src="" alt="">
+
+                        <div id="nome-player"></div>
+                        <div id="artista-player"></div>
+
+                        <div class="barra-musica">
+                            <div></div>
+                        </div>
+
+                        <button class="botao-play">
+                            ▶
+                        </button>
+
+                        <p id="trecho-player"></p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="barra-inferior">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
